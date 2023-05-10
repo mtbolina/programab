@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    int ano;
+    Scanner teclado = new Scanner (System.in);
+    System.out.println("Digite o ano: ");
+    ano = teclado.nextInt();
+
+    if(ano %400 == 0){
+
+    System.out.println(ano + " Ano bissexto");
+    }else if ((ano%4 == 0) && (ano%100 !=0)){
+      System.out.println(ano + " Ano bissexto");
+    }
+    else{
+      System.out.println(ano +" Não é bisexto");
+    }
+
+    
+  }
+}
